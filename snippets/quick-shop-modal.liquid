@@ -1,0 +1,144 @@
+
+<div
+  id="AjaxQuickShop"
+  class="ajax-quick-shop"
+  aria-hidden="true"
+>
+  <div
+    class="ajax-quick-shop-overlay"
+    data-quick-shop-close
+  ></div>
+
+  <div
+    class="ajax-quick-shop-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="AjaxQuickShopTitle"
+    tabindex="-1"
+  >
+
+    <button
+      type="button"
+      class="ajax-quick-shop-close"
+      data-quick-shop-close
+      aria-label="Close quick shop"
+    >
+      &times;
+    </button>
+
+    <div class="ajax-quick-shop-loading" data-quick-shop-loading>
+        <div class="ajax-quick-shop-spinner"></div>
+        <span>Loading product...</span>
+    </div>
+
+    <div
+      class="ajax-quick-shop-error"
+      data-quick-shop-error
+      hidden
+    >
+      <p>Unable to load this product.</p>
+
+      <button
+        type="button"
+        data-quick-shop-retry
+      >
+        Try again
+      </button>
+    </div>
+
+    <div
+      class="ajax-quick-shop-content"
+      data-quick-shop-content
+      hidden
+    >
+
+      <div class="ajax-quick-shop-gallery">
+
+        <div
+          class="ajax-quick-shop-main-image"
+          data-quick-shop-main-image
+        ></div>
+
+        <div
+          class="ajax-quick-shop-thumbnails"
+          data-quick-shop-thumbnails
+        ></div>
+
+      </div>
+
+      <div class="ajax-quick-shop-details">
+
+        <h2
+          id="AjaxQuickShopTitle"
+          class="ajax-quick-shop-title"
+          data-quick-shop-title
+        ></h2>
+
+        <div
+          class="ajax-quick-shop-price-wrapper"
+          data-quick-shop-price
+        ></div>
+
+        <div
+          class="ajax-quick-shop-options"
+          data-quick-shop-options
+        ></div>
+
+        <div class="ajax-quick-shop-quantity-wrapper">
+
+          <label for="AjaxQuickShopQuantity">
+            Quantity
+          </label>
+
+          <div class="ajax-quick-shop-quantity">
+
+            <button
+              type="button"
+              data-quantity-minus
+              aria-label="Decrease quantity"
+            >
+              −
+            </button>
+
+            <input
+              id="AjaxQuickShopQuantity"
+              type="number"
+              min="1"
+              value="1"
+              data-quick-shop-quantity
+              aria-label="Quantity"
+            >
+
+            <button
+              type="button"
+              data-quantity-plus
+              aria-label="Increase quantity"
+            >
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+        <div
+          class="ajax-quick-shop-availability"
+          data-quick-shop-availability
+        ></div>
+
+        <button
+          type="button"
+          class="ajax-quick-shop-add"
+          data-quick-shop-add
+          disabled
+        >
+          <span data-add-text>Add to Cart</span>
+          <span data-add-loading hidden>Adding...</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
